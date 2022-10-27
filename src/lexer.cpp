@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <set>
 
 using std::ifstream; // For File I/O
 
