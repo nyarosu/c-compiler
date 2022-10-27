@@ -41,7 +41,9 @@ void checkBuffer(std::string &bufferToCheck, std::vector<std::string> &tokens) {
     }
 
     // If our buffer ends in a whitespace, and what was before it wasn't caught above, it must be an identifier
-    else if (bufferToCheck[bufferToCheck.length()])
+    else if (bufferToCheck[bufferToCheck.length()]) {
+        //todo
+    }
 }
 
 // temporary, for debugging compile errors
