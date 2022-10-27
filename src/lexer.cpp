@@ -36,7 +36,7 @@ std::vector<std::string> lex(std::string filePath) {
 // Checks if bufferToCheck is a valid token, and adds it to tokens if it is, then clears the buffer (if valid token).
 void checkBuffer(std::string &bufferToCheck, std::vector<std::string> &tokens) {
 
-    if (validTokens.contains(bufferToCheck)) {
+    if (validTokens.find(bufferToCheck) == validTokens.end()) {
         tokens.push_back(bufferToCheck);
     }
 
