@@ -7,7 +7,7 @@
 
 using std::ifstream; // For File I/O
 
-void checkBuffer(std::string &bufferToCheck, std::vector<std::string> &tokens);
+void checkBuffer(std::string &bufferToCheck, std::vector<Token> &tokens);
 
 // The goal of the lexer is to scan the file, and turn it into a list of 'tokens', like braces, parentheses, keywords, identifiers etc
 std::vector<Token> lex(std::string filePath) {
