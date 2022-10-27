@@ -32,10 +32,10 @@ std::vector<std::string> lex(std::string filePath) {
 
 // Checks if bufferToCheck is a valid token, and adds it to tokens if it is, then clears the buffer (if valid token).
 void checkBuffer(std::string &bufferToCheck, std::vector<std::string> &tokens) {
-    switch(bufferToCheck) {
-        case ('{'):
-            tokens.push_back("{");
-        case ('}'):
-            tokens.push_back("}");
-    }
+    return;
+}
+
+// temporary, for debugging compile errors
+int main() {
+    return 0;
 }
