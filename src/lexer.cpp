@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include <set>
+#include <array>
 #include "token.h"
 
 using std::ifstream; // For File I/O
