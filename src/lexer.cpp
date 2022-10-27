@@ -4,6 +4,8 @@
 #include <vector>
 #include <set>
 
+#include "token.h"
+
 using std::ifstream; // For File I/O
 
 void checkBuffer(std::string &bufferToCheck, std::vector<std::string> &tokens);
@@ -33,7 +35,13 @@ std::vector<std::string> lex(std::string filePath) {
 
 // Checks if bufferToCheck is a valid token, and adds it to tokens if it is, then clears the buffer (if valid token).
 void checkBuffer(std::string &bufferToCheck, std::vector<std::string> &tokens) {
-    static std::set<std::string> validTokens{{"{", "}"}};
+
+    if (validTokens.contains(bufferToCheck)) {
+        tokens.push_back(bufferToCheck);
+    }
+
+    // If our buffer ends in a whitespace, and what was before it wasn't caught above, it must be an identifier
+    else if (bufferToCheck[])
 }
 
 // temporary, for debugging compile errors
