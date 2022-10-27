@@ -47,5 +47,6 @@ void checkBuffer(std::string &bufferToCheck, std::vector<Token> &tokens) {
 
 // temporary, for debugging compile errors
 int main() {
-    return 0;
+    std::set<std::string> validTokens {"{", "}", "(", ")", ";", "int", "return", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
+    std::cout << validTokens;
 }
