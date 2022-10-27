@@ -44,3 +44,7 @@ void checkBuffer(std::string &bufferToCheck, std::vector<Token> &tokens) {
         //todo
     }
 }
+
+int main() {
+    return 0;
+}
