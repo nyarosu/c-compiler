@@ -10,8 +10,6 @@
 class Token {
 
 public:
-    static std::set<std::string> validTokens;
-
     Token(std::string data) {
         //todo
     }
