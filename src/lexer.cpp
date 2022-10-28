@@ -46,7 +46,7 @@ void checkBuffer(std::string &bufferToCheck, std::vector<Token> &tokens) {
 
     if (validTokens.find(bufferToCheck) == validTokens.end()) {
         tokens.push_back(bufferToCheck);
-        //test
+        //tests
     }
 
     // If our buffer ends in a whitespace, and what was before it wasn't caught above, it must be an identifier
