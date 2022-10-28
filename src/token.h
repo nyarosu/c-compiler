@@ -1,6 +1,3 @@
-//
-// Created by Ronak Chatterjee on 27/10/2022.
-//
 
 #include <set>
 #ifndef C_COMPILER_TOKEN_H
